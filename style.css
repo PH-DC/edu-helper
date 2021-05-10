@@ -1,0 +1,321 @@
+/* 
+    INDEX
+
+    1. REL LINKS
+    2. UNIVERSAL
+    3. CUSTOM SCROLL BAR
+    4. HEADER
+    5. FOOTER
+    6. RESPONSIVE
+    7. SEMESTER CARDS PAGE 
+ */
+
+
+/* REL LINKS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* UNIVERSAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CUSTOM SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border: 3px solid #24252A;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0088a9;
+    border-radius: 3px;
+}
+/* HEADER */
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+}
+
+.selected {
+    color: #0088a9;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+nav {
+    order: 1;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9
+}
+
+.contribute {
+    order: 2;
+}
+
+button {
+    margin-left: auto;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* FOOTER */
+.f-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.f-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24252A;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color:  #edf0f1;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 35px;
+    font-weight: 700;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgba(0, 136, 169, 1);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color:  #edf0f1;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #edf0f1;
+    transition: all 0.5s ease;
+}
+
+
+.footer-col .social-links a:hover { 
+    color: #edf0f1;
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* RESPONSIVE */
+@media(max-width: 767px){
+    .footer-col {
+        width: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.explore {
+    margin-top: 10px;
+    height: 600px;
+    display: block;
+}
+
+/* SEMESTER CARDS */
+
+.container {
+    position: relative;
+    height: 300px;
+    width: 1000px;
+    top: 60px;
+    left: calc(50% - 500px);
+    display: inline-flex;
+}
+  
+.card {
+    display: flex;
+    height: 280px;
+    width: 350px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+  
+.card:not(:first-child) {
+      margin-left: -50px;
+}
+  
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+  
+.card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+  
+.title {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+  
+.span {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 70px;
+}
+  
+.bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+}
+  
+.emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+  
+.filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: #63a4ff;
+    background: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    transition: 0.6s ease-out;
+}
+  
+.card:hover .filledbar {
+    width: 140px;
+    transition: 0.4s ease-out;
+}
+  
+.stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+}
+  
+svg {
+    fill: #17141d;
+    stroke-width: 2px;
+}
+  
+.card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+}
+
+.margin_filled_bar {
+    margin-top: 15px;
+}
+
+li, a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
