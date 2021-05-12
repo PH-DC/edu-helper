@@ -5,14 +5,15 @@
     2. UNIVERSAL
     3. CUSTOM SCROLL BAR
     4. HEADER
-    5. FOOTER
-    6. RESPONSIVE
-    7. SEMESTER CARDS PAGE 
+    5. TOP IMAGE
+    6. FOOTER
+    7. RESPONSIVE
+    8. SEMESTER CARDS PAGE 
  */
 
 /* REL LINKS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
 /* UNIVERSAL */
 
 * {
@@ -104,7 +105,36 @@ button {
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
-
+/* TOP IMAGE AND ABOUT BUTTON */
+.top-image img {
+  width: 100%;
+}
+.about-button {
+  position: absolute;
+  top: 83%;
+  right: 10%;
+  width: 200px;
+  border-radius: 12px;
+  font-size: 32px;
+  color: black;
+  background: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(0, 136, 169, 1) 50%
+  );
+  background-size: 200% 100%;
+  background-position: left bottom;
+  border: rgba(0, 136, 169, 1);
+  border-width: 5px;
+  border-style: solid;
+  transition: all 0.4s ease;
+}
+.about-button:hover {
+  border-width: 5px;
+  color: white;
+  background-color: transparent;
+  background-position: right bottom;
+}
 /* FOOTER */
 .f-container {
   max-width: 1170px;
@@ -188,12 +218,16 @@ ul {
   color: #edf0f1;
   background-color: rgba(0, 136, 169, 0.8);
 }
+/* Copy right statement */
 .copyright {
   background-color: black;
   color: white;
   height: 20px;
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
+}
+.copyright p {
+  font-family: "Montserrat", sans-serif;
 }
 /* RESPONSIVE */
 @media (max-width: 767px) {
@@ -209,9 +243,35 @@ ul {
   }
 }
 
+/* DISCOVER SECTION */
+.discover-section {
+  margin: 20px;
+}
+.discover-section h1 {
+  font-family: "Raleway", sans-serif;
+}
+.diploma-section {
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 28px;
+  width: max-content;
+  transition: 0.4s ease-out;
+  cursor: default;
+}
+.diploma-section i {
+  color: rgba(0, 136, 169, 0.8);
+  font-size: 28px;
+  transition: 0.4s ease-out;
+}
+.diploma-section:hover,
+i:hover {
+  font-size: 36px;
+  transition: 0.4s ease-out;
+}
+
 .explore {
   margin-top: 10px;
-  height: 600px;
+  height: 500px;
   display: block;
 }
 
