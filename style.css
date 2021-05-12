@@ -8,11 +8,12 @@
     5. FOOTER
     6. RESPONSIVE
     7. SEMESTER CARDS PAGE 
+    8. ABOUT
  */
 
 
 /* REL LINKS */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 
 /* UNIVERSAL */
 
@@ -300,10 +301,10 @@ ul {
     transition: 0.6s ease-out;
 }
   
-svg {
+/* svg {
     fill: #17141d;
     stroke-width: 2px;
-}
+} */
   
 .card:hover .stroke {
     stroke-dashoffset: 100;
@@ -318,4 +319,154 @@ li, a {
     color: white;
     text-decoration: none;
     font-size: 12px;
+}
+
+/* ABOUT */
+
+.about-container .banner-img img {
+  width: 100%;
+  position: relative;
+}
+
+.about-container .banner-img .about-wrapper {
+  width: 80%;
+  margin: 100px auto 100px auto;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  -webkit-transform: translate(-30%, -30%);
+          transform: translate(-30%, -30%);
+  color: #fff;
+}
+
+.about-container .banner-img .about-wrapper h1 {
+  font-size: 3.2rem;
+}
+
+.about-container .banner-img .about-wrapper .tagline-pdc {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.about-container .banner-img .about-wrapper p {
+  margin: 20px;
+  margin-left: 0px;
+  font-size: 1.2rem;
+  width: 70%;
+  font-weight: 400;
+}
+
+.about-container .quest {
+  width: 70%;
+  display: block;
+  margin: 100px;
+  margin-bottom: 40px;
+}
+
+.about-container .quest h3 {
+  font-size: 2.4rem;
+}
+
+.about-container .quest p {
+  margin: 20px;
+  margin-left: 0px;
+  font-size: 1.25rem;
+  width: 100%;
+  font-weight: 300;
+}
+
+.about-container .quest p span {
+  width: 60%;
+}
+
+.about-container .about-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.about-container .about-cards .card-sec {
+  margin: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about-container .about-cards .card-sec .card-about {
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
+  background-color: #30333e;
+  width: 300px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.about-container .about-cards .card-sec .card-about h1 {
+  font-size: 2rem;
+  margin: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.about-container .about-cards .card-sec .card-about .icon-img {
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.about-container .about-cards .card-sec .card-about .icon-img svg {
+  margin: 20px 0px;
+}
+
+.about-container .about-cards .card-sec .card-about .div {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.about-container .about-cards .card-sec .card-about .div .ab-desc {
+  text-align: center;
+  width: 70%;
+  display: block;
+  margin: auto;
+  color: white;
+}
+
+.about-container .about-cards .card-sec .card-about .div .ab-desc p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.about-container .initiative {
+  width: 70%;
+  display: block;
+  margin: 100px;
+  margin-bottom: 100px;
+}
+
+.about-container .initiative h3 {
+  font-size: 2.4rem;
+}
+
+.about-container .initiative p {
+  margin: 20px;
+  margin-left: 0px;
+  font-size: 1.25rem;
+  width: 100%;
+  font-weight: 300;
+}
+
+.about-container .initiative p span {
+  width: 60%;
 }
