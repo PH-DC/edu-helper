@@ -402,7 +402,7 @@ li, a {
   margin-top: 50px;
   position: relative;
   text-align: center;
-  background-color: #30333e;
+  background-color: whitesmoke;
   width: 300px;
   height: 100%;
   border-radius: 10px;
@@ -412,7 +412,7 @@ li, a {
   font-size: 2rem;
   margin: 15px;
   font-weight: 500;
-  color: white;
+  color: black;
 }
 
 .about-container .about-cards .card-sec .card-about .icon-img {
@@ -441,7 +441,7 @@ li, a {
   width: 70%;
   display: block;
   margin: auto;
-  color: white;
+  color: black;
 }
 
 .about-container .about-cards .card-sec .card-about .div .ab-desc p {
