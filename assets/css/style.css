@@ -686,7 +686,7 @@ li, a {
     display: block;
     margin: auto;
     width: max-content;
-    font-size: 3rem;
+    font-size: 2em;
 }
 
 .faq-container .faq-sec .faqs{
@@ -698,7 +698,7 @@ li, a {
 
 .faq-container .faq-sec .faq-c{
     display: flex;
-    height: 55px;
+    height: auto;
     background-color: #F2F2F2;
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
@@ -751,5 +751,6 @@ li, a {
 
 .rotate{
     transform: rotate(180deg);
+    transform-origin: center;
     transition: 0.5s;
 }
