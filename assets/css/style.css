@@ -833,7 +833,6 @@ li, a {
 
 .rotate{
     transform: rotate(180deg);
-    transform-origin: center;
     transition: 0.5s;
 }
 
