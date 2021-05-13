@@ -5,11 +5,12 @@
     2. UNIVERSAL
     3. CUSTOM SCROLL BAR
     4. HEADER
-    5. TOP IMAGE AND ABOUT BUTTON [Line 111]
-    6. FOOTER
-    7. RESPONSIVE [Line 235]
-    8. SEMESTER CARDS PAGE [Line 272 ]
-    9. ABOUT
+    5. FOOTER
+    6. RESPONSIVE
+    7. SEMESTER CARDS PAGE 
+    8. ABOUT
+    9. TESTIMONIAL CARDS
+    10. TEAMS PAGE
  */
 
 /* REL LINKS */
@@ -112,7 +113,7 @@ button:hover {
 }
 /* TOP IMAGE AND ABOUT BUTTON */
 .top-image {
-  background-image: url("images/banner.png");
+  background-image: url("../assets/images/infrastructure/banner.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 600px;
@@ -463,7 +464,7 @@ a {
   margin-top: 50px;
   position: relative;
   text-align: center;
-  background-color: #30333e;
+  background-color: whitesmoke;
   width: 300px;
   height: 100%;
   border-radius: 10px;
@@ -473,7 +474,7 @@ a {
   font-size: 2rem;
   margin: 15px;
   font-weight: 500;
-  color: white;
+  color: black;
 }
 
 .about-container .about-cards .card-sec .card-about .icon-img {
@@ -502,13 +503,31 @@ a {
   width: 70%;
   display: block;
   margin: auto;
-  color: white;
+  color: black;
 }
 
 .about-container .about-cards .card-sec .card-about .div .ab-desc p {
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: 30px;
+}
+
+.about-container .about-cards .card-sec .card-about .div .ab-desc a {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #000;
+}
+
+.about-container
+  .about-cards
+  .card-sec
+  .card-about
+  .div
+  .ab-desc
+  .desc-text:hover {
+  color: #0088a9;
 }
 
 .about-container .initiative {
@@ -532,4 +551,199 @@ a {
 
 .about-container .initiative p span {
   width: 60%;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  overflow: hidden;
+}
+
+.testimonial-section .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.testimonial-section .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  background: white;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(1px);
+  border-radius: 10px;
+}
+
+.testimonial-section .swiper-slide-active {
+  filter: blur(0px);
+  background: white;
+}
+
+.testimonial-section .testimonialBox {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  padding-top: 90px;
+  color: #999;
+}
+
+.testimonial-section .quote {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  opacity: 0.2;
+}
+
+.testimonial-section .details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonial-section .details .imageBox {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.testimonial-section .details .imageBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-section .details h3 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(0, 136, 169, 1);
+  line-height: 1.1em;
+}
+
+.testimonial-section .details h3 span {
+  font-size: 12px;
+  color: #666;
+}
+
+.testimonial-section .swiper-container-3d .swiper-slide-shadow-left,
+.testimonial-section .swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+/* TEAMS PAGE */
+.team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  position: relative;
+}
+
+.team-section .teams-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  margin: 40px 0;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.teams-container .heading {
+  width: 70%;
+  display: block;
+  margin: 100px;
+  margin-bottom: 40px;
+}
+.teams-container .heading h3 {
+  font-size: 2.4rem;
+}
+
+.teams-container .teams-card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
+  backdrop-filter: blur(10px);
+}
+
+.teams-container .teams-card .card-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.teams-container .teams-card .card-content .team-image-box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.teams-container .teams-card .card-content .team-image-box img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teams-container .teams-card .card-content .team-about-box h3 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.teams-container .teams-card .card-content .team-about-box h3 span {
+  text-transform: initial;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.teams-container .teams-card .team-connect {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+}
+
+.teams-container .teams-card .team-connect li {
+  list-style: none;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.teams-container .teams-card .team-connect li a {
+  color: black;
+  font-size: 24px;
 }
