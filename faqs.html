@@ -41,10 +41,87 @@
 
     <main class="faq-wrapper">
         <section class="faq-container">
-            <diV class="faq-sec">
+            <div class="faq-sec">
                 <h1 class="faq-head">Frequently Asked Questions</h1>
-                <div></div>
-            </diV>
+                <div class="faqs">
+                    <div class="faq-comp">
+                        <div class="faq-c">
+                            <p id="quest">Is this directly affiliated to MSBTE ?</p>
+                            <a class="arrowDown"><svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9242 8.04932L27.5758 10.701L15 23.2768L2.42419 10.701L5.07584 8.04932L15 17.9735L24.9242 8.04932Z" fill="#747474"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="ans">
+                            <p>
+                                No, This website is not affiliated to MSBTE nor it has been sponsored by it. 
+                                We the students have made it out of interest to solve the problems of finding resources at once. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-comp">
+                        <div class="faq-c">
+                            <p id="quest">Is the content on this website updated and correct ?</p>
+                            <a class="arrowDown"><svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9242 8.04932L27.5758 10.701L15 23.2768L2.42419 10.701L5.07584 8.04932L15 17.9735L24.9242 8.04932Z" fill="#747474"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="ans">
+                            <p>
+                                Yes every single information on this site is legit and trustable, the website is updated regularly whenever
+                                MSBTE make some big changes. like change in exam pattern, syllabus or scheme.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-comp">
+                        <div class="faq-c">
+                            <p id="quest">Are the resources paid or free ?</p>
+                            <a class="arrowDown"><svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9242 8.04932L27.5758 10.701L15 23.2768L2.42419 10.701L5.07584 8.04932L15 17.9735L24.9242 8.04932Z" fill="#747474"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="ans">
+                            <p>
+                                We want every student to gain maximum profit from this website hence, we are not charging a single penny !
+                                It is free and always will be.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-comp">
+                        <div class="faq-c">
+                            <p id="quest">Can I contribute to this project?</p>
+                            <a class="arrowDown"><svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9242 8.04932L27.5758 10.701L15 23.2768L2.42419 10.701L5.07584 8.04932L15 17.9735L24.9242 8.04932Z" fill="#747474"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="ans">
+                            <p> 
+                                Yes, you can contribute to this project including this website. If you encounter any bugs or out-dated information you can raise an issue on GitHub.
+                                If you want to solve an issue mention so, 
+                                <br/><br/>
+                                - You can also provide resources, reach us out on our mail.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-comp">
+                        <div class="faq-c">
+                            <p id="quest">Is this directly affiliated to MSBTE ?</p>
+                            <a class="arrowDown"><svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9242 8.04932L27.5758 10.701L15 23.2768L2.42419 10.701L5.07584 8.04932L15 17.9735L24.9242 8.04932Z" fill="#747474"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="ans">
+                            <p>
+                                Apart from the website's code and design we do not hold any copyright authority. The material provided is strictly falls unders MSBTE.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -89,6 +166,36 @@
         </div>
     </footer>
     <!-- FOOTER END -->
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        const accordion = document.querySelectorAll(".faq-comp");
+        const text = document.querySelectorAll("#quest");
+        const button = document.querySelectorAll(".arrowDown");
+
+        for(i=0;i<accordion.length;i++){
+            accordion[i].addEventListener('click', function(e){
+                e.target.classList.toggle("active")
+                e.target.parentElement.querySelector(".ans").querySelector("p").classList.toggle("active")
+                e.target.parentElement.querySelector(".arrowDown").classList.toggle("rotate")
+            })
+
+            button[i].addEventListener('click', function(e){
+                e.target.parentElement.classList.toggle("active")
+                e.target.parentElement.classList.toggle("rotate")
+                e.target.parentElement.parentElement.parentElement.querySelector(".ans").querySelector('p').classList.toggle("active")
+            })
+
+            text[i].addEventListener('click', function(e){
+                e.target.parentElement.classList.toggle("active")
+                e.target.parentElement.parentElement.querySelector(".ans").querySelector('p').classList.toggle("active")
+                e.target.parentElement.querySelector(".arrowDown").classList.toggle("rotate")
+            })
+        }
+    </script>
+
 </body>
 
 </html>
