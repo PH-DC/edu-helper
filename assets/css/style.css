@@ -5,6 +5,13 @@
     2. UNIVERSAL
     3. CUSTOM SCROLL BAR
     4. HEADER
+    5. FOOTER
+    6. RESPONSIVE
+    7. SEMESTER CARDS PAGE 
+    8. ABOUT
+    9. TESTIMONIAL CARDS
+    10. TEAMS PAGE
+    11. FAQ PAGE
     5. TOP IMAGE AND BUTTON
     6. FOOTER
     7. RESPONSIVE
@@ -740,9 +747,96 @@ li, a {
 }
 
 .teams-container .teams-card .team-connect li a {
-  color: black;
-  font-size: 24px;
+    color: black;
+    font-size: 24px;
+} 
+
+
+/* FAQ PAGE */
+
+.faq-container{
+    width: 100%;
+    padding: 50px;
 }
+
+.faq-container .faq-sec{
+    display: block;
+    margin: auto;    
+}
+
+.faq-container .faq-sec h1{
+    display: block;
+    margin: auto;
+    width: max-content;
+    font-size: 2em;
+}
+
+.faq-container .faq-sec .faqs{
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.faq-container .faq-sec .faq-c{
+    display: flex;
+    height: auto;
+    background-color: #F2F2F2;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    box-shadow: 7px 6px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    padding: 17px 20px;
+    justify-content: space-between;
+}
+
+.faq-comp{
+    width: inherit;
+    margin: 30px 0px;
+    cursor: pointer;
+}
+
+.faq-container .faq-sec .faq-c p{
+    font-weight: bold;
+    color: #747474;
+}
+
+.faq-container .faq-sec .faq-c.active{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 1px solid #c4c4c4;
+    transition: 0.5s;
+}
+
+.faq-container .faq-sec .faq-c a{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ans p{
+    background-color: #EDEDED;
+    color: #747474;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 7px 6px 10px rgba(0, 0, 0, 0.25);
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.ans p.active{
+    padding: 30px 20px;
+    height: auto;
+    opacity: 1;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: 0.5s;
+}
+
 /* Copy right statement */
 .copyright {
   background-color: black;
