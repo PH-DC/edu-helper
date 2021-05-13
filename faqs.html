@@ -47,9 +47,8 @@
                     <div class="faq-comp">
                         <div class="faq-c">
                             <p id="quest">Is this directly affiliated to MSBTE ?</p>
-                            <a class="arrowDown"><svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9242 8.04932L27.5758 10.701L15 23.2768L2.42419 10.701L5.07584 8.04932L15 17.9735L24.9242 8.04932Z" fill="#747474"/>
-                                </svg>
+                            <a class="arrowDown">
+                                <img src="./assets/images/arrow.svg"/>
                             </a>
                         </div>
                         <div class="ans">
@@ -175,23 +174,19 @@
         const text = document.querySelectorAll("#quest");
         const button = document.querySelectorAll(".arrowDown");
 
+        for(i=0;i<text.length;i++){
+            text[i].addEventListener('click', function(e){
+                this.parentElement.classList.toggle("active")
+                this.parentElement.querySelector(".ans").querySelector('p').classList.toggle("active")
+                this.parentElement.querySelector(".arrowDown").classList.toggle("rotate")
+            })
+        }
+
         for(i=0;i<accordion.length;i++){
             accordion[i].addEventListener('click', function(e){
-                e.target.classList.toggle("active")
-                e.target.parentElement.querySelector(".ans").querySelector("p").classList.toggle("active")
-                e.target.parentElement.querySelector(".arrowDown").classList.toggle("rotate")
-            })
-
-            button[i].addEventListener('click', function(e){
-                e.target.parentElement.classList.toggle("active")
-                e.target.parentElement.classList.toggle("rotate")
-                e.target.parentElement.parentElement.parentElement.querySelector(".ans").querySelector('p').classList.toggle("active")
-            })
-
-            text[i].addEventListener('click', function(e){
-                e.target.parentElement.classList.toggle("active")
-                e.target.parentElement.parentElement.querySelector(".ans").querySelector('p').classList.toggle("active")
-                e.target.parentElement.querySelector(".arrowDown").classList.toggle("rotate")
+                this.classList.toggle("active")
+                this.querySelector(".ans").querySelector("p").classList.toggle("active")
+                this.querySelector(".arrowDown").classList.toggle("rotate")
             })
         }
     </script>
