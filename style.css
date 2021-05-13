@@ -5,15 +5,18 @@
     2. UNIVERSAL
     3. CUSTOM SCROLL BAR
     4. HEADER
-    5. TOP IMAGE
+    5. TOP IMAGE AND ABOUT BUTTON [Line 111]
     6. FOOTER
-    7. RESPONSIVE
-    8. SEMESTER CARDS PAGE 
+    7. RESPONSIVE [Line 235]
+    8. SEMESTER CARDS PAGE [Line 272 ]
+    9. ABOUT
  */
 
 /* REL LINKS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+
 /* UNIVERSAL */
 
 * {
@@ -35,7 +38,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0088a9;
+  background: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
   border-radius: 3px;
 }
 /* HEADER */
@@ -78,9 +81,11 @@ nav {
 .nav_links li {
   display: inline-block;
   padding: 0px 20px;
+  color: #fff;
 }
 
 .nav_links li a {
+  color: #fff;
   transition: all 0.3s ease 0s;
 }
 
@@ -106,35 +111,33 @@ button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
 /* TOP IMAGE AND ABOUT BUTTON */
-.top-image img {
-  width: 100%;
+.top-image {
+  background-image: url("images/banner.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+.top-image h1 {
+  color: white;
+  font-size: 3.2rem;
+  font-family: "Raleway", sans-serif;
+}
+.top-image p {
+  color: white;
 }
 .about-button {
-  position: absolute;
-  top: 83%;
-  right: 10%;
-  width: 200px;
+  margin-top: 20px;
   border-radius: 12px;
-  font-size: 32px;
-  color: black;
-  background: linear-gradient(
-    to right,
-    transparent 50%,
-    rgba(0, 136, 169, 1) 50%
-  );
-  background-size: 200% 100%;
-  background-position: left bottom;
+  font-size: 18px;
+  color: whitesmoke;
+  background-color: rgba(0, 136, 169, 1);
   border: rgba(0, 136, 169, 1);
-  border-width: 5px;
-  border-style: solid;
   transition: all 0.4s ease;
 }
-.about-button:hover {
-  border-width: 5px;
-  color: white;
-  background-color: transparent;
-  background-position: right bottom;
-}
+
 /* FOOTER */
 .f-container {
   max-width: 1170px;
@@ -222,8 +225,9 @@ ul {
 .copyright {
   background-color: black;
   color: white;
-  height: 20px;
-  font-size: 14px;
+  height: 40px;
+  font-size: 18px;
+  padding-top: 10px;
   text-align: center;
 }
 .copyright p {
@@ -244,28 +248,19 @@ ul {
 }
 
 /* DISCOVER SECTION */
-.discover-section {
-  margin: 20px;
-}
-.discover-section h1 {
-  font-family: "Raleway", sans-serif;
-}
+
 .diploma-section {
   margin-top: 30px;
   margin-left: 50px;
   font-size: 28px;
+  font-weight: 400px;
   width: max-content;
   transition: 0.4s ease-out;
   cursor: default;
 }
-.diploma-section i {
+.arrow-right {
   color: rgba(0, 136, 169, 0.8);
   font-size: 28px;
-  transition: 0.4s ease-out;
-}
-.diploma-section:hover,
-i:hover {
-  font-size: 36px;
   transition: 0.4s ease-out;
 }
 
@@ -284,15 +279,16 @@ i:hover {
   top: 60px;
   left: calc(50% - 500px);
   display: inline-flex;
+  margin-top: 20px;
 }
 
 .card {
   display: flex;
   height: 280px;
-  width: 350px;
-  background-color: #17141d;
+  width: 240px;
+  background-color: whitesmoke;
   border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
+  box-shadow: -1rem 0 3rem rgb(173, 173, 173);
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
@@ -314,7 +310,7 @@ i:hover {
 }
 
 .title {
-  color: white;
+  color: black;
   font-weight: 300;
   position: absolute;
   left: 20px;
@@ -322,7 +318,7 @@ i:hover {
 }
 
 .span {
-  color: white;
+  color: black;
   font-weight: 300;
   position: absolute;
   left: 20px;
@@ -338,7 +334,7 @@ i:hover {
 }
 
 .emptybar {
-  background-color: #2e3033;
+  background-color: grey;
   width: 100%;
   height: 100%;
 }
@@ -366,10 +362,10 @@ i:hover {
   transition: 0.6s ease-out;
 }
 
-svg {
-  fill: #17141d;
-  stroke-width: 2px;
-}
+/* svg {
+    fill: #17141d;
+    stroke-width: 2px;
+} */
 
 .card:hover .stroke {
   stroke-dashoffset: 100;
@@ -382,7 +378,158 @@ svg {
 
 li,
 a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 12px;
+  list-style: none;
+}
+
+/* ABOUT */
+
+.about-container .banner-img img {
+  width: 100%;
+  position: relative;
+}
+
+.about-container .banner-img .about-wrapper {
+  width: 80%;
+  margin: 100px auto 100px auto;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  -webkit-transform: translate(-30%, -30%);
+  transform: translate(-30%, -30%);
+  color: #fff;
+}
+
+.about-container .banner-img .about-wrapper h1 {
+  font-size: 3.2rem;
+}
+
+.about-container .banner-img .about-wrapper .tagline-pdc {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.about-container .banner-img .about-wrapper p {
+  margin: 20px;
+  margin-left: 0px;
+  font-size: 1.2rem;
+  width: 70%;
+  font-weight: 400;
+}
+
+.about-container .quest {
+  width: 70%;
+  display: block;
+  margin: 100px;
+  margin-bottom: 40px;
+}
+
+.about-container .quest h3 {
+  font-size: 2.4rem;
+}
+
+.about-container .quest p {
+  margin: 20px;
+  margin-left: 0px;
+  font-size: 1.25rem;
+  width: 100%;
+  font-weight: 300;
+}
+
+.about-container .quest p span {
+  width: 60%;
+}
+
+.about-container .about-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.about-container .about-cards .card-sec {
+  margin: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about-container .about-cards .card-sec .card-about {
+  margin-top: 50px;
+  position: relative;
+  text-align: center;
+  background-color: #30333e;
+  width: 300px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.about-container .about-cards .card-sec .card-about h1 {
+  font-size: 2rem;
+  margin: 15px;
+  font-weight: 500;
+  color: white;
+}
+
+.about-container .about-cards .card-sec .card-about .icon-img {
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  background: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.about-container .about-cards .card-sec .card-about .icon-img svg {
+  margin: 20px 0px;
+}
+
+.about-container .about-cards .card-sec .card-about .div {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+
+.about-container .about-cards .card-sec .card-about .div .ab-desc {
+  text-align: center;
+  width: 70%;
+  display: block;
+  margin: auto;
+  color: white;
+}
+
+.about-container .about-cards .card-sec .card-about .div .ab-desc p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.about-container .initiative {
+  width: 70%;
+  display: block;
+  margin: 100px;
+  margin-bottom: 100px;
+}
+
+.about-container .initiative h3 {
+  font-size: 2.4rem;
+}
+
+.about-container .initiative p {
+  margin: 20px;
+  margin-left: 0px;
+  font-size: 1.25rem;
+  width: 100%;
+  font-weight: 300;
+}
+
+.about-container .initiative p span {
+  width: 60%;
 }
