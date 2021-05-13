@@ -5,12 +5,15 @@
     2. UNIVERSAL
     3. CUSTOM SCROLL BAR
     4. HEADER
-    5. FOOTER
-    6. RESPONSIVE
-    7. SEMESTER CARDS PAGE 
-    8. ABOUT
-    9. TESTIMONIAL CARDS
-    10. TEAMS PAGE
+    5. TOP IMAGE AND BUTTON
+    6. FOOTER
+    7. RESPONSIVE
+    8. DISCOVER SECTION
+    9. SEMESTER CARDS PAGE 
+    10. ABOUT
+    11. TESTIMONIAL CARDS
+    12. TEAMS PAGE
+    13. COPY RIGHT STATEMENT
  */
 
 /* REL LINKS */
@@ -113,7 +116,7 @@ button:hover {
 }
 /* TOP IMAGE AND ABOUT BUTTON */
 .top-image {
-  background-image: url("../assets/images/infrastructure/banner.png");
+  background-image: url("../images/infrastructure/banner.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 600px;
@@ -222,18 +225,7 @@ ul {
   color: #edf0f1;
   background-color: rgba(0, 136, 169, 0.8);
 }
-/* Copy right statement */
-.copyright {
-  background-color: black;
-  color: white;
-  height: 40px;
-  font-size: 18px;
-  padding-top: 10px;
-  text-align: center;
-}
-.copyright p {
-  font-family: "Montserrat", sans-serif;
-}
+
 /* RESPONSIVE */
 @media (max-width: 767px) {
   .footer-col {
@@ -746,4 +738,16 @@ a {
 .teams-container .teams-card .team-connect li a {
   color: black;
   font-size: 24px;
+}
+/* Copy right statement */
+.copyright {
+  background-color: black;
+  color: white;
+  height: 40px;
+  font-size: 18px;
+  padding-top: 10px;
+  text-align: center;
+}
+.copyright p {
+  font-family: "Montserrat", sans-serif;
 }
