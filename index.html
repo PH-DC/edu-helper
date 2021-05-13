@@ -10,12 +10,15 @@
     <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
     <!-- HEADER BEGIN -->
     <header>
-        <img class="logo" src="assets/images/logo.svg" alt="website logo" width="50" height="50">
+        <a class="logo" href="index.html">
+            <img src="assets/images/logo.svg" alt="website logo" width="50" height="50">
+        </a>
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html" class="selected">Home</a></li>
@@ -35,25 +38,25 @@
         <p>Every resource you need to start with your course journey</p>
         <a href="about.html"><button class="about-button">About</button></a>
     </div>
-    
+
     <!-- DISCOVER SECTION START -->
-    <h1 class="diploma-section">EXPLORE DIPLOMA <i class="arrow-right fas fa-chevron-right "style=""></i></h1> 
-    
+    <h1 class="diploma-section">EXPLORE DIPLOMA <i class="arrow-right fas fa-chevron-right"></i></h1>
+
     <!--  DIPLOMA CARDS SECTION START -->
     <div class="explore">
         <section>
             <div class="container">
-                <div class="card card-diploma">
+                <div class="card">
                     <h3 class="title">COMPUTER</h3>
                     <span class="span">CO1I</span>
                     <div class="bar">
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
@@ -64,10 +67,10 @@
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
@@ -78,10 +81,10 @@
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
@@ -92,10 +95,10 @@
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
@@ -104,7 +107,7 @@
     </div>
     <!--  DIPLOMA CARDS SECTION START -->
 
-    <h1 class="diploma-section">EXPLORE DEGREE <i class="arrow-right fas fa-chevron-right "style=""></i></h1> </i>
+    <h1 class="diploma-section">EXPLORE DEGREE <i class="arrow-right fas fa-chevron-right"></i></h1> </i>
     <!--  DEGREE CARDS SECTION START -->
     <div class="explore">
         <section>
@@ -116,10 +119,24 @@
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="title">COMPUTER</h3>
+                    <span class="span">FE, SE, TE, BE</span>
+                    <div class="bar">
+                        <div class="emptybar"></div>
+                        <div class="filledbar"></div>
+                        <p class="margin_filled_bar">
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
@@ -130,10 +147,10 @@
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
@@ -144,10 +161,10 @@
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
@@ -158,10 +175,10 @@
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
@@ -172,32 +189,111 @@
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="title">INFORMATION TECHNOLOGY   </h3>
+                    <h3 class="title">INFORMATION TECHNOLOGY </h3>
                     <span class="span">FE, SE, TE, BE</span>
                     <div class="bar">
                         <div class="emptybar"></div>
                         <div class="filledbar"></div>
                         <p class="margin_filled_bar">
-                            <li><a href="#">View Syllabus</a></li>
-                            <li><a href="#">View Subjects</a></li>
-                            <li><a href="#">Marking Scheme</a></li>
-
-                            <li><a href="#">Download Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Syllabus</a></li>
+                            <li class="in-card"><a href="#">View Subjects</a></li>
+                            <li class="in-card"><a href="#">Marking Scheme</a></li>
+                            <li class="in-card"><a href="#">Download Syllabus</a></li>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <!--  DEGREE CARDS SECTION START -->
+    <!--  DEGREE CARDS SECTION ENDS -->
+
+    <!-- TESTIMONIAL STUDENT BEGIN -->
+    <h1 class="diploma-section">STUDENT TESTIMONIALS <i class="arrow-right fas fa-chevron-right"></i></h1>
+    <!-- BEGIN -->
+    <section class="testimonial-section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- STUDENT | DEPARTMENT OF COMPUTER ENGINEERING -->
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="assets/images/helpers/quote.png" alt="Quote" class="quote" width="50" height="50">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus accusantium
+                                deserunt, ullam cupiditate facilis exercitationem saepe dicta quasi consectetur,
+                                repudiandae commodi, quas ab ex neque quibusdam maxime iure enim.</p>
+                        </div>
+                        <div class="details">
+                            <div class="imageBox">
+                                <img src="assets/images/faculty/user.png" alt="Photo of Deep Kawale">
+                            </div>
+                            <h3>Deep Kawale<br><span>Student<br>Computer Engineering </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- STUDENT | DEPARTMENT OF CIVIL ENGINEERING -->
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="assets/images/helpers/quote.png" alt="Quote" class="quote" width="50" height="50">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus accusantium
+                                deserunt, ullam cupiditate facilis exercitationem saepe dicta quasi consectetur,
+                                repudiandae commodi, quas ab ex neque quibusdam maxime iure enim.</p>
+                        </div>
+                        <div class="details">
+                            <div class="imageBox">
+                                <img src="assets/images/faculty/user.png" alt="Photo of Harshali Patil">
+                            </div>
+                            <h3>Harshali Patil<br><span>Student<br>Civil Engineering </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- STUDENT | DEPARTMENT OF MECHANICAL ENGINEERING -->
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="assets/images/helpers/quote.png" alt="Quote" class="quote" width="50" height="50">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus accusantium
+                                deserunt, ullam cupiditate facilis exercitationem saepe dicta quasi consectetur,
+                                repudiandae commodi, quas ab ex neque quibusdam maxime iure enim.</p>
+                        </div>
+                        <div class="details">
+                            <div class="imageBox">
+                                <img src="assets/images/faculty/user.png" alt="Photo of Dipesh Mane">
+                            </div>
+                            <h3>Dipesh Mane<br><span>Student<br>Mechanical Engineering </span></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- STUDENT | DEPARTMENT OF ELECTRONICS AND TELECOMMUNICATION ENGINEERING -->
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="assets/images/helpers/quote.png" alt="Quote" class="quote" width="50" height="50">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora accusamus accusantium
+                                deserunt, ullam cupiditate facilis exercitationem saepe dicta quasi consectetur,
+                                repudiandae commodi, quas ab ex neque quibusdam maxime iure enim.</p>
+                        </div>
+                        <div class="details">
+                            <div class="imageBox">
+                                <img src="assets/images/faculty/user.png" alt="Photo of Prathamesh Kadam">
+                            </div>
+                            <h3>Prathamesh Kadam<br><span>Student<br> E&TC Engineering </span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIAL STUDENT ENDS-->
+
     <!-- FOOTER BEGIN -->
     <footer class="footer">
         <div class="f-container">
@@ -244,7 +340,11 @@
         <p>Copyright &#169 PDC All Rights Reserved</p>
     </div>
     <!-- Copyright Statment END  -->
+
+    <!-- Scripts -->
     <script src="https://kit.fontawesome.com/2d3915bf58.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
 </body>
 
 </html>
