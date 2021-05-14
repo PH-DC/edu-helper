@@ -122,10 +122,10 @@ button {
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
-/* TOP IMAGE AND ABOUT BUTTON */
+/* TOP IMAGE */
 .top-image {
   background-image: url("../images/infrastructure/banner.png");
-  background-size:cover;
+  background-size: cover;
   height: 600px;
   padding-top: 10%;
   padding-left: 5%;
@@ -136,10 +136,13 @@ button:hover {
   color: white;
   font-size: 3.2rem;
   font-family: "Raleway", sans-serif;
+  width: max-content;
 }
 .top-image p {
   color: white;
+  width: max-content;
 }
+/* ABOUT BUTTON */
 .about-button {
   margin-top: 20px;
   border-radius: 8px;
@@ -381,7 +384,8 @@ ul {
   line-height: 3em;
 }
 
-li, a {
+li,
+a {
   color: black;
   text-decoration: none;
   font-size: 12px;
@@ -749,93 +753,92 @@ li, a {
 }
 
 .teams-container .teams-card .team-connect li a {
-    color: black;
-    font-size: 24px;
-} 
-
+  color: black;
+  font-size: 24px;
+}
 
 /* FAQ PAGE */
 
-.faq-container{
-    width: 100%;
-    padding: 50px;
+.faq-container {
+  width: 100%;
+  padding: 50px;
 }
 
-.faq-container .faq-sec{
-    display: block;
-    margin: auto;    
+.faq-container .faq-sec {
+  display: block;
+  margin: auto;
 }
 
-.faq-container .faq-sec h1{
-    display: block;
-    margin: auto;
-    width: max-content;
-    font-size: 2em;
+.faq-container .faq-sec h1 {
+  display: block;
+  margin: auto;
+  width: max-content;
+  font-size: 2em;
 }
 
-.faq-container .faq-sec .faqs{
-    max-width: 800px;
-    display: block;
-    margin: auto;
-    margin-top: 60px;
+.faq-container .faq-sec .faqs {
+  max-width: 800px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
 }
 
-.faq-container .faq-sec .faq-c{
-    display: flex;
-    height: auto;
-    background-color: #F2F2F2;
-    border: 1px solid #E0E0E0;
-    box-sizing: border-box;
-    box-shadow: 7px 6px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
-    padding: 17px 20px;
-    justify-content: space-between;
+.faq-container .faq-sec .faq-c {
+  display: flex;
+  height: auto;
+  background-color: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  box-shadow: 7px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  padding: 17px 20px;
+  justify-content: space-between;
 }
 
-.faq-comp{
-    width: inherit;
-    margin: 30px 0px;
-    cursor: pointer;
+.faq-comp {
+  width: inherit;
+  margin: 30px 0px;
+  cursor: pointer;
 }
 
-.faq-container .faq-sec .faq-c p{
-    font-weight: bold;
-    color: #747474;
+.faq-container .faq-sec .faq-c p {
+  font-weight: bold;
+  color: #747474;
 }
 
-.faq-container .faq-sec .faq-c.active{
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-bottom: 1px solid #c4c4c4;
-    transition: 0.5s;
+.faq-container .faq-sec .faq-c.active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 1px solid #c4c4c4;
+  transition: 0.5s;
 }
 
-.faq-container .faq-sec .faq-c a{
-    cursor: pointer;
-    transition: 0.5s;
+.faq-container .faq-sec .faq-c a {
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.ans p{
-    background-color: #EDEDED;
-    color: #747474;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    box-shadow: 7px 6px 10px rgba(0, 0, 0, 0.25);
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.7s;
+.ans p {
+  background-color: #ededed;
+  color: #747474;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: 7px 6px 10px rgba(0, 0, 0, 0.25);
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.7s;
 }
 
-.ans p.active{
-    padding: 30px 20px;
-    height: auto;
-    opacity: 1;
+.ans p.active {
+  padding: 30px 20px;
+  height: auto;
+  opacity: 1;
 }
 
-.rotate{
-    transform: rotate(180deg);
-    transition: 0.5s;
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.5s;
 }
 
 /* Copy right statement */
