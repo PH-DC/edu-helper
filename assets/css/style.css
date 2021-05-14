@@ -121,7 +121,7 @@ button {
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }
-/* TOP IMAGE AND ABOUT BUTTON */
+/* TOP IMAGE */
 .top-image {
   background-image: url("../images/infrastructure/banner.png");
   background-size: cover;
@@ -140,6 +140,7 @@ button:hover {
   color: white;
   width: max-content;
 }
+/* ABOUT BUTTON */
 .about-button {
   margin-top: 20px;
   border-radius: 8px;
