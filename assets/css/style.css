@@ -21,6 +21,7 @@
     11. TESTIMONIAL CARDS
     12. TEAMS PAGE
     13. COPY RIGHT STATEMENT
+    14. COMING SOON
  */
 
 /* REL LINKS */
@@ -79,7 +80,7 @@ header {
 .logo {
   cursor: pointer;
   margin-right: auto;
-  opacity: 100%
+  opacity: 100%;
 }
 
 nav {
@@ -853,3 +854,95 @@ a {
 .copyright p {
   font-family: "Montserrat", sans-serif;
 }
+
+/* COMING SOON START*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+.comingSoon {
+  font-family: "Secular One", sans-serif;
+  width: max-content;
+  margin: 5% auto 8% auto;
+}
+.comingSoon h1 {
+  display: flex;
+  font-size: 62px;
+  color: #415fff;
+  flex-direction: column;
+  align-items: center;
+  line-height: 80px;
+  animation: coming-txt 1s;
+}
+.coming:nth-child(2) {
+  font-size: 88px;
+  animation: soon-txt 1s;
+}
+
+.animationSec {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: max-content;
+  top: 0px;
+  animation-name: cloudAnimate;
+  animation: cloudAnimate 4s;
+  overflow: hidden;
+  display: flex;
+}
+.cloud {
+  margin-left: 90px;
+}
+.cloud:nth-child(1) {
+  margin-left: 20px;
+}
+.cloud:nth-child(1),
+.cloud:nth-child(3),
+.cloud:nth-child(5),
+.cloud:nth-child(7) {
+  position: relative;
+  top: 0;
+  animation: cloud2 2s 4s infinite alternate linear;
+}
+.cloud:nth-child(2),
+.cloud:nth-child(4),
+.cloud:nth-child(6),
+.cloud:nth-child(8) {
+  position: relative;
+  top: -60px;
+  animation: cloud1 2s 4s infinite alternate ease;
+}
+@keyframes cloudAnimate {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 0px;
+  }
+}
+@keyframes coming-txt {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 64px;
+  }
+}
+@keyframes soon-txt {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 88px;
+  }
+}
+@keyframes cloud1 {
+  100% {
+    top: 0px;
+  }
+}
+@keyframes cloud2 {
+  100% {
+    top: -60px;
+  }
+}
+/* COMING SOON END */
